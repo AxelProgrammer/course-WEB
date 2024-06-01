@@ -1,0 +1,165 @@
+:root {
+    --h1-font-size: 72px; 
+    --h2-font-size: 56px; 
+    --h3-font-size: 48px; 
+
+    --h1-line-height: 80px;
+    --p_main-line-height: 28px;
+
+
+    --p_main-font-size: 20px;
+}
+
+/* Стили для экранов шириной до 1240px (мини_пк) */
+@media (max-width: 1240px) {
+    .container {
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+    header {
+        height: 70px;
+        padding: 10px;
+    }
+
+
+    header > div > form > select {
+        height: 40px;
+    }
+
+    header > div > a#logo {
+        display: block;
+        width: 217px;
+        height: 39px;
+        float: left;
+    }
+    header > div  {
+        display: flex;
+    }
+
+    main > div#main > div > h1 {
+        width: 60%;
+        font-size: calc(var(--h1-font-size) * 0.7);
+        line-height: calc(var(--h1-line-height) * 0.7);
+    }
+    
+    main > div#main > div > p {
+        width: 60%;
+        font-size: calc(var(--p_main-font-size) * 0.7);
+        margin: 24px 0 30px 0;
+        line-height: calc(var(--p_main-line-height) * 0.7);
+    }
+    main h2 {
+        font-size: calc(var(--h2-font-size) * 0.7);
+    }
+
+    h3 {
+        font-size: calc(var(--h3-font-size) * 0.7);
+    }
+
+
+}
+
+/* Стили для экранов шириной до 768px (планшеты) */
+@media (max-width: 768px) {
+    header > div:nth-child(2) {
+        margin-left: auto; /* Сдвигает второй элемент вправо */
+        height: 60px;
+    }
+
+    header > div > a#logo {
+        display: block;
+        width: 130px;
+        height: 28px;
+        margin-right: 40%;
+        float: left;
+    }
+
+    header {
+        height: 90px;
+        padding: 5px;
+    }
+
+    header > div > form {
+        height: 20px;
+        position: absolute;
+        top: 40px;
+        width: 70%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    header > div > form > select {
+        height: 30px;
+        margin-left: 0;
+        padding: 0;
+    }
+    
+
+    header > div > a.icon {
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin: 10px 0 0 40px;
+        margin-bottom: 40px;
+        float: right;
+    }
+
+    main > div#main > div > h1 {
+        width: 60%;
+        font-size: calc(var(--h1-font-size) * 0.5);
+        line-height: calc(var(--h1-line-height) * 0.5);
+    }
+    
+    main > div#main > div > p {
+        width: 60%;
+        font-size: calc(var(--p_main-font-size) * 0.5);
+        margin: 24px 0 30px 0;
+        line-height: calc(var(--p_main-line-height) * 0.5);
+    }
+    main h2 {
+        font-size: calc(var(--h2-font-size) * 0.5);
+    }
+
+    h3 {
+        font-size: calc(var(--h3-font-size) * 0.5);
+    }
+
+    footer * {
+        font-size: 13px;
+    }
+
+    footer > div > a {
+        margin-left: 10px;
+    }
+
+    #user {
+        width: 60%;
+    }
+
+    main > div#services > ul > li > img {
+        display: block;
+        max-width: 216px;
+        max-height: 188px;
+        float: left;
+    }
+    
+    main > div#services > ul > li > div > h3 {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+    
+    main > div#services > ul > li > div > p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Стили для экранов шириной до 480px (смартфоны)
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+} */

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Это чтобы ширина элемента включала границу и отступы */
+}
+
+/* Сброс стилей для списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Сброс стилей для текстовых элементов */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+ul {
+    display: flex;
+}
+
+.a2 {
+    padding-left: 20px;
+}
+
+.bl3, .bl4, .bl2 {
+    width: 100px;
+    height:100px;
+    padding: 10px;
+
+    position: absolute;
+    border: 1px solid rgb(184, 184, 184);
+    background-color: rgb(193, 193, 193);
+    text-align: center;
+}
+.bl2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.bl4 {
+    left: 50px;
+    top: 50px;
+}
+.bl3 {
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    text-decoration: none;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    width: 200px; 
+}
+.bl1, .bl2 {
+    height: 200px;
+}
+
+.bl2 {
+    width: 100px;
+}
+.bl1 {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    display:inline-block;
+
+    
+    border: 1px;
+    border: 1px solid rgb(184, 184, 184);
+    background-color: rgb(193, 193, 193);
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.link {
+    padding-left: 20px;
+}
+
+
+header, footer, main, nav{
+  margin: 10px 200px;
+  padding: 25px;
+  width: 1000px;
+  border: 2px solid #CACFD2;
+  background-color: #E5E7E9;
+}
+
+
+.block {
+  display: block;
+}
+
+main {
+    display: flex;
+    min-height: 800px;
+}
+
+.left-block, .right-block {
+    width: 50%;
+    padding: 10px;
+}
+
+
+footer {
+    text-align: center;
+}
